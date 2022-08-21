@@ -23,6 +23,7 @@ jobs:
         with:
           version: v3.9.3
       - name: Run chart-releaser
-        uses: helm/chart-releaser-action@v1.4.0
+        # 
+        uses: florisvdg/chart-releaser-action@v1.3.0
         env:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
