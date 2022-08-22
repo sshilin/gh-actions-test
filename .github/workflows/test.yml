@@ -23,6 +23,7 @@ jobs:
         run: goveralls -coverprofile=$GITHUB_WORKSPACE/profile.cov -service=github
         env:
           COVERALLS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        working-directory: app
   # golangci:
   #     runs-on: ubuntu-latest
   #     steps:
